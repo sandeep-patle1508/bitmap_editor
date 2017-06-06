@@ -1,6 +1,6 @@
 module BitmapEditor
   module Operations
-    class Show
+    class Show < Base
 
       # initialize
       # assign additional vars

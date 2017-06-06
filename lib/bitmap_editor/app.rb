@@ -3,8 +3,8 @@ module BitmapEditor
     attr_accessor :bitmap
 
     # Initialize App Class.
-	#
-	# Initialize Bitmap object
+    #
+    # Initialize Bitmap object
     def initialize
       @bitmap = BitmapEditor::Bitmap.new
     end
@@ -16,12 +16,11 @@ module BitmapEditor
 
       File.open(file).each do |line|
         keys = line.chomp.split
-
         case keys.first
         when 'S'
-            printf BitmapEditor::Command.new(bitmap, keys).execute
+            printf BitmapEditor::Command.new(@bitmap, keys).execute
         else
-            BitmapEditor::Command.new(bitmap, keys).execute
+            BitmapEditor::Command.new(@bitmap, keys).execute
         end
       end
     end
