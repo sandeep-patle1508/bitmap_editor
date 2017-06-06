@@ -1,4 +1,8 @@
 #!/usr/bin/env ruby
-require './lib/bitmap_editor'
+begin
+  require './lib/bitmap_editor'
+ rescue LoadError => e
+   abort "Could not load 'bitmap_editor'"
+ end
 
-BitmapEditor.new.run ARGV.first
+BitmapEditor::App.new.run ARGV.first
