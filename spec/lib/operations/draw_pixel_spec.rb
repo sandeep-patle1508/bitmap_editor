@@ -36,10 +36,10 @@ describe BitmapEditor::Operations::DrawPixel do
         end
       end
 
-      context 'validates colour' do
+      context 'validates color' do
         let(:params) { [1, 2, 3] }
 
-        it 'should raise error when not correct format of colour' do
+        it 'should raise error when not correct format of color' do
           expect{ subject.validate(params) }.to raise_error BitmapEditor::ValidationError
         end
       end
