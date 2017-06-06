@@ -16,7 +16,8 @@ There are 6 supported commands:
 - S - Show the contents of the current image
 
 # Example
-To run the application you must supply a command file like so  bin/bitmap_editor examples/show.txt
+To run the application by command
+`bin/bitmap_editor examples/show.txt`
 
 Input File:
 ```
