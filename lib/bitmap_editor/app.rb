@@ -19,9 +19,9 @@ module BitmapEditor
 
         case keys.first
         when 'S'
-            # show the bitmap
+            printf BitmapEditor::Command.new(bitmap, keys).execute
         else
-            # handle other commands
+            BitmapEditor::Command.new(bitmap, keys).execute
         end
       end
     end
