@@ -9,7 +9,8 @@ module BitmapEditor
       L: 'DrawPixel',
       V: 'DrawVertical',
       H: 'DrawHorizontal',
-      S: 'Show'
+      S: 'Show',
+      F: 'FillRegion'
     }
 
     # initialize
